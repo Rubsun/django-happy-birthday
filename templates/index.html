@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}
+    <title>Homepage</title>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1 class="text-center mt-5">Welcome to the Birthday Reminder Service</h1>
+        <p class="text-center mt-3">Stay updated with your friends' and family members' birthdays. Never miss an important day!</p>
+        {% if user.is_authenticated %}
+            <div class="text-center mt-4">
+                <a class="btn btn-primary btn-lg" href="{% url 'client_list' %}">View Clients</a>
+                <a class="btn btn-secondary btn-lg" href="{% url 'profile' %}">Go to Profile</a>
+            </div>
+        {% else %}
+            <div class="text-center mt-4">
+                <a class="btn btn-primary btn-lg" href="{% url 'login' %}">Login</a>
+                <a class="btn btn-success btn-lg" href="{% url 'register' %}">Register</a>
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}
