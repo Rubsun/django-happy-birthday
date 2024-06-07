@@ -3,7 +3,7 @@
 ## Description
 Django Happy Birthday - This is a Django project designed to send birthday notifications. The project uses Celery for asynchronous tasks and Redis as a message broker.
 
-##Time
+## Time
 The time in the app is UTC + 0
 
 ## Requirements
