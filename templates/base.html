@@ -21,9 +21,9 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav me-auto">
+                <div class="navbar-nav">
                     {% if user.is_authenticated %}
-                        <a class="nav-link" href="{% url 'client_list' %}">View Clients</a>
+                        <a class="nav-link active" href="{% url 'client_list' %}">View Clients</a>
                     {% endif %}
                 </div>
                 <div class="navbar-nav ms-auto">
