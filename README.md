@@ -48,3 +48,5 @@ celery -A django_happy_birthday beat --loglevel=info
 ```bash
 python manage.py runserver
 ```
+### P.S.
+You can use the ready-made mail specified in .env
